@@ -1,0 +1,30 @@
+<table class="container striped">
+    <thead>
+        <tr>
+            <th class=" center-align">ID</th>
+            <th class=" center-align">IMG</th>
+            <th class="super_bold center-align">NOMBRE</th>
+            <th class="super_bold center-align">PRECIO</th>
+            <th class="super_bold center-align">OPCIONES</th>
+        </tr>
+    </thead>
+    <tbody style="overflow-y:scroll;">
+        <% ropa.forEach(e=> { %>
+            <tr>
+                <td class="center-align">
+                    <%= e.id%>
+                </td>
+                <td class="center-align"><img src="<%= e.img%>" alt="ropa" class="responsive-img" style="width:50px;">
+                </td>
+                <td class="center-align">
+                    <%= e.name%>
+                </td>
+                <td class="center-align">$<%= e.price%>
+                </td>
+                <td class="center-align"><a href="/deleteClothe/<%= e.id%>" class="btn"
+                        style="margin-right: 10px;">Eliminar</a><a href="/updateClothe/<%= e.id%>" class="btn">Actualizar</a>
+                </td>
+            </tr>
+            <% }) %>
+    </tbody>
+</table>

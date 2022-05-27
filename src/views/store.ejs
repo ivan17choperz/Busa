@@ -1,0 +1,59 @@
+<%- include("templates/header") %>
+    <!-- slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="../assets/imgs/img of store/slider/1.jpg">
+                <div class="caption center-align">
+                    <h3>Diseños exclusivos</h3>
+                    <h5 class="light text-white">para que sientas seguridad a la hora de vestir </h5>
+                </div>
+            </li>
+            <li>
+                <img src="../assets/imgs/img of store/slider/2.jpg">
+                <div class="caption left-align">
+                    <h3>Por que pensamos en ti</h3>
+                    <h5 class="light text-white">Contactannos directamente para que tus medidias sean exactas en tus
+                        prendas</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- CARD OF STORE -->
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <% ropa.forEach(e => { %>
+                    <div class="col s12 m4 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <figure>
+                                    <img class="activator" src="<%= e.img %>">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h5 class=" activator grey-text text-darken-4 uppercase truncate"><%= e.name %></h5>
+                                <img src="../assets/imgs/img of store/icons/bx-book-open.svg" class="activator right"
+                                    alt="">
+                                <h5 class="light"><%= e.price %>$</h5>
+                            </div>
+                            <div class="card-reveal">
+                                <h5 class=" card-title uppercase center-align"><%= e.name %><i
+                                        class='bx bx-window-close right'></i></h5>
+                                <img class="activator responsive-img" src="<%= e.img %>">
+                                <h5 class="center-align light"><%= e.description%></h5>
+                                <h5 class="light center-align"><%= e.price %>$</h5>
+                                <a href="#" class="btn col s12"><i class='bx bx-cart-add' style="margin-right:10px;"></i>añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-trolley">
+        <a href="#" class="add-trolley"></a>
+    </div>
+<%- include("templates/footer") %>

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+/* Globals effects*/
+*{
+  font-family: 'Nanum Myeongjo', serif;
+}
+.super_bold{
+  font-weight: 800;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+body {
+  background: #FFE6E6;
+}
+
+/*specific effects*/
+
+nav,.side-nav {
+  background: #FF2626;
+}
+.btn,
+.btn-large {
+  background: #BD1616;
+}
+.btn:hover,
+.btn-large:hover {
+  background: #FF2626;
+}
+.page-footer {
+  background: #000000;
+}
+.page-footer h3,h4{
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  color: #000000;
+}
+.sidenav, .services{
+  background: #FF2626;
+}
+
+
+.btn-trolley{
+  position: fixed;
+  top: 85%;
+  right: 2%;
+  z-index: 1000;
+}
+.btn-trolley .add-trolley{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  color: #efefef;
+  background: #FF2626;
+  border-radius: 50%;
+}
+.btn-trolley .add-trolley img{
+  filter: invert(100%);
+  width: 40px;
+}

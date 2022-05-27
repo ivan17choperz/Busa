@@ -1,0 +1,42 @@
+<%- include("templates/header") %>
+    <div class="container">
+        <div class="section">
+            <div class="row center-align">
+                <div class="col s12 m6 l7 offset-l3 offset-m3 white">
+                    <img src="../assets/imgs/logo.jpeg" class="responsive-img" width="400px" alt="">
+                    <h3 class="uppercase align-center">Registrate</h3>
+                    <form class="container" action="/registrer" method="post">
+                        <div class="col s12  input-field">
+                            <label for="id" class="uppercase">identificacion</label>
+                            <input type="text" id="id" name="id">
+                        </div>
+                        <div class="col s12  input-field">
+                            <label for="name" class="uppercase">Nombre</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="col s12  input-field">
+                            <label for="address" class="uppercase">direccion</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                        <div class="col s12  input-field">
+                            <label for="number" class="uppercase">numero</label>
+                            <input type="text" id="number" name="number">
+                        </div>
+                        <div class="col s12  input-field">
+                            <label for="user" class="uppercase">nombre de usuario</label>
+                            <input type="text" id="user" name="user">
+                        </div>
+                        <div class="col s12 input-field">
+                            <label for="passw" class="uppercase">contraseña</label>
+                            <input type="password" id="passw" name="password">
+                        </div>
+                        <div class="col s12 input-field">
+                            <button type="submit" class="col s12 btn">registrarse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <%- include("templates/footer") %>
